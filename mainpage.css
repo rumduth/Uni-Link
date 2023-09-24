@@ -1,0 +1,79 @@
+body
+{
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background: linear-gradient(0.25turn, rgb(2, 91, 2), #5fa8d3,#a3b18a);
+}
+
+.body_main_page
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu
+{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu button
+{
+    width: 150px;
+    height: 100px;
+    color: green;
+    background: linear-gradient(0.25turn, #219ebc, #5fa8d3,#a3b18a);
+    margin: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+div .button__nav_bar
+{
+    background: linear-gradient(0.25turn, rgb(2, 91, 2), #5fa8d3,#a3b18a);
+    color: #051F24;
+    height: 60px;
+    width: 120px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.main__heading img
+{
+    height: 100%;
+    width: 6%;
+    opacity: 30%;
+}
+
+/*CSS for icon */
+.eagle_icon
+{
+    position: fixed;
+    height: 80%;
+    bottom: 0px;
+    right: 0px;
+}
+
+.unt_icon
+{
+    position: fixed;
+    height: 20%;
+    bottom: 250px;
+    left: 175px;
+}
+/*CSS for icon */
+
+.search_bar
+{
+    height: 60px;
+    background-color: #0a0f10;
+    color: rgb(23, 71, 23);
+}
+.google-map
+{
+    position:fixed;
+    left: 33.90%;
+    bottom: 0px;
+}
