@@ -1,79 +1,129 @@
-body
-{
-    background-repeat: no-repeat ;
-    background-size: cover;
-    background: linear-gradient(0.25turn, rgb(2, 91, 2), #5fa8d3,#a3b18a);
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(0.25turn, rgb(2, 91, 2), #5fa8d3, #a3b18a);
 }
 
-.body_main_page
-{
-    display: flex;
-    flex-direction: row;
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 20%;
+  border-radius: 10px;
+  background: linear-gradient(0.25turn, rgb(2, 91, 2), #5fa8d3, #537a0f);
+  padding: 6rem;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
 }
 
-.menu
-{
-    height: 50%;
-    display: flex;
-    justify-content: space-between;
+.close-modal {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
 
-.menu button
+.not_hidden
 {
-    width: 150px;
-    height: 100px;
-    color: green;
-    background: linear-gradient(0.25turn, #219ebc, #5fa8d3,#a3b18a);
-    margin: 40px;
-    border-radius: 10px;
-    font-weight: bold;
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+.show-modal {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1.75rem 3.5rem;
+    margin: 5rem 2rem;
+    border: none;
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+  }
+
+
+
+.body_main_page {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu button {
+  width: 150px;
+  height: 100px;
+  color: green;
+  background: linear-gradient(0.25turn, #219ebc, #5fa8d3, #a3b18a);
+  margin: 40px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+div .button__nav_bar {
+  background: linear-gradient(0.25turn, rgb(2, 91, 2), #5fa8d3, #a3b18a);
+  color: #051f24;
+  height: 60px;
+  width: 120px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.main__heading img {
+  height: 100%;
+  width: 6%;
+  opacity: 30%;
+}
+
+/*CSS for icon */
+.eagle_icon {
+  position: fixed;
+  height: 80%;
+  bottom: 0px;
+  right: 0px;
+}
+
+.unt_icon {
+  position: fixed;
+  height: 20%;
+  bottom: 250px;
+  left: 175px;
+}
+/*CSS for icon */
+
+.search_bar {
+  height: 60px;
+  background-color: #0a0f10;
+  color: rgb(23, 71, 23);
+}
+.google-map {
+  position: fixed;
+  left: 33.9%;
+  bottom: 0px;
 }
 
 
-div .button__nav_bar
-{
-    background: linear-gradient(0.25turn, rgb(2, 91, 2), #5fa8d3,#a3b18a);
-    color: #051F24;
-    height: 60px;
-    width: 120px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
 
-.main__heading img
-{
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    width: 6%;
-    opacity: 30%;
-}
-
-/*CSS for icon */
-.eagle_icon
-{
-    position: fixed;
-    height: 80%;
-    bottom: 0px;
-    right: 0px;
-}
-
-.unt_icon
-{
-    position: fixed;
-    height: 20%;
-    bottom: 250px;
-    left: 175px;
-}
-/*CSS for icon */
-
-.search_bar
-{
-    height: 60px;
-    background-color: #0a0f10;
-    color: rgb(23, 71, 23);
-}
-.google-map
-{
-    position:fixed;
-    left: 33.90%;
-    bottom: 0px;
-}
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+  
