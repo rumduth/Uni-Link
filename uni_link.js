@@ -1,10 +1,17 @@
 'use strict';
 
-const modal = document.querySelector('.modal');
-
+const modal = document.querySelectorAll('.modal');
 const overlay = document.querySelector('.overlay');
-
 const sign_in_button = document.querySelector(`#sign__in`);
+const sign_in_entries = document.querySelector(`.sign_in`);
+const sign_up_button = document.querySelector(`#sign__up`);
+const sign_up_entries = document.querySelector(`sign_up`)
+const hour_label = document.querySelector(`.hour`);
+
+
+
+
+
 
 sign_in_button.addEventListener('click',function()
 {
@@ -12,7 +19,15 @@ sign_in_button.addEventListener('click',function()
     overlay.classList.remove('hidden')
 })
 
+sign_up_button.addEventListener('click',function()
+{
+    modal.classList.add('not_hidden');
+    overlay.classList.remove('hidden')
+})
+
+
 const close_modal = document.querySelector('.close-modal');
+
 close_modal.addEventListener('click',function()
 {
     modal.classList.remove('not_hidden');
@@ -20,6 +35,20 @@ close_modal.addEventListener('click',function()
 })
 
 
+
+
+
+
+
+
+setInterval(function()
+{
+  hour_label.textContent = new Intl.DateTimeFormat(navigator.language,{
+    hour: `numeric`,
+    minute: `numeric`,
+    second: `numeric`
+  }).format(new Date());
+},1000);
 
 
 

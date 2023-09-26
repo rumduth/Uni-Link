@@ -1,125 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="mainpage.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="mainpage.css" />
     <title>Main Page</title>
-</head>
-<body>
-   <div class="container-fluid px-0">
-    <!-- FOR SIGN IN/SIGN OUT-->
-    <div class="modal show-modal text-center sign_in ">
+  </head>
+  <body>
+    <div class="container-fluid px-0">
+      <!-- FOR SIGN IN/
+        SIGN OUT-->
+        <div class="modal show-modal text-center sign_up">
+            <button class="close-modal">&times;</button>
+            <div class="row text-center">
+              <div class="col-4">
+                <label for="user_name">Username</label>
+              </div>
+              <div class="col-8">
+                <input type="text" id="user_name" placeholder="Username" />
+              </div>
+              <div class="col-4">
+                <label for="pass_word">Password</label>
+              </div>
+              <div class="col-8">
+                <input type="password" id="pass_word" placeholder="Password" />
+              </div>
+              <div class="col-4">
+                <label for="student_id">Student ID</label>
+              </div>
+              <div class="col-8">
+                <input
+                  type="number"
+                  min="0"
+                  max="8"
+                  id="student_id"
+                  placeholder="Student ID"
+                />
+              </div>
+              <div class="col-4">
+                <label for="UNT_email">UNT Email</label>
+              </div>
+              <div class="col-8">
+                <input type="email" id="UNT_email" placeholder="email" />
+              </div>
+              <div class="col-4">
+                <label for="phone_number">Phone Number</label>
+              </div>
+              <div class="col-8">
+                <input type="tel" id="phone_number" placeholder="Phone Number" />
+              </div>
+            </div>
+            <button class="btn-success mt-4">SIGN UP</button>
+          </div>
+      <div class="modal show-modal text-center sign_in">
         <button class="close-modal">&times;</button>
         <div class="row text-center">
-            <div class="col-4">
-                <label for="user_name">Username</label>
-            </div>
-            <div class="col-8">
-                <input type="text" id="user_name" placeholder="Username">
-            </div>
-            <div class="col-4">
-                <label for="pass_word">Password</label>
-            </div>
-            <div class="col-8">
-                <input type="password" id="pass_word" placeholder="Password">
-            </div>
+          <div class="col-4">
+            <label for="user_name">Username</label>
+          </div>
+          <div class="col-8">
+            <input type="text" id="user_name" placeholder="Username" />
+          </div>
+          <div class="col-4">
+            <label for="pass_word">Password</label>
+          </div>
+          <div class="col-8">
+            <input type="password" id="pass_word" placeholder="Password" />
+          </div>
         </div>
         <button class="btn-success mt-4">SIGN IN</button>
-
       </div>
 
-    <!-- For Icon Image in Main Page: Eagle, and UNT-->
-    <img class="eagle_icon" src="pictures/eagle_icon.png">
-    <img class="unt_icon" src="pictures/unt_icon.png">
-    
-    <div class="display-4 main__heading">
-        <img class="img-fluid px-0" src="pictures/UNT-Seal-White.jpg">
-        Welcome to UniLink - A Social Webpage for all UNT Students
-    </div>
-    
+      
 
+      <!-- For Icon Image in Main Page: Eagle, and UNT-->
+      <img class="eagle_icon" src="pictures/eagle_icon.png" />
+      <img class="unt_icon" src="pictures/unt_icon.png" />
 
-    
+      <div class="display-4 main__heading">
+        <img class="img-fluid px-0" src="pictures/UNT-Seal-White.jpg" />
+        <span class="text-center ml-5">
+          Welcome to UniLink - A Social Webpage for all UNT Students</span
+        >
+        <span class="hour ml-5">Hour</span>
+      </div>
 
-    <div class = "row">
+      <div class="row">
         <div class="col-9 text-center">
-            <form action="https://www.unt.edu">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <button class="rounded"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                          </svg></button>
-                    </div>
-                    <input type="text" class="form-control search_bar" placeholder="What information you are looking at?">
-                </div>
-            </form>
+          <form action="https://www.unt.edu">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button class="rounded">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <input
+                type="text"
+                class="form-control search_bar"
+                placeholder="What information you are looking at?"
+              />
+            </div>
+          </form>
         </div>
         <div class="col-1">
-            
-                <button class="rounded-pill button__nav_bar">Notification
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
-                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
-                      </svg>
-                </button>
+          <button class="rounded-pill button__nav_bar">
+            Notification
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-bell-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"
+              />
+            </svg>
+          </button>
         </div>
         <div class="col-1">
-                <button class="rounded-pill button__nav_bar">Message
-                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                      </svg>
-                </button>
+          <button class="rounded-pill button__nav_bar">
+            Message
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-envelope"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+              />
+            </svg>
+          </button>
         </div>
         <div class="col-1 dropdown">
-                <button class="btn dropdown-toggle rounded-pill button__nav_bar" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Users
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person-fill" viewBox="0 0 16 16">
-                        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"/>
-                      </svg>
-                </button>
-                <div class="dropdown-menu bg-success" aria-labelledby="dropdownMenuButton">
-                    <li class="dropdown-item" id="sign__in" href="#">Sign in</li>
-                    <li class="dropdown-item" href="#">Sign up</li>
-                    <li class="dropdown-item" href="#">Settings</li>
-                  </div>
+          <button
+            class="btn dropdown-toggle rounded-pill button__nav_bar"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Users
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-file-person-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"
+              />
+            </svg>
+          </button>
+          <div
+            class="dropdown-menu bg-success"
+            aria-labelledby="dropdownMenuButton"
+          >
+            <li class="dropdown-item" id="sign__in" href="#">Sign in</li>
+            <li class="dropdown-item" id="sign__up">Sign up</li>
+            <li class="dropdown-item" href="#">Settings</li>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div class="row">
+      <div class="row">
         <div class="col-4 body_main_page">
-            <div class="menu row">
-               <div class="col-6 rounded-pill menu_button"><button>MENU</button></div>
-               <div class="col-6 rounded-pill menu_button"><button>Friends</button></div>
-               <div class="col-6 border-success rounded-pill menu_button"><button>Maps</button></div>
-               <div class="col-6 rounded menu_button"><button>Events</button></div>
+          <div class="menu row">
+            <div class="col-6 rounded-pill menu_button">
+              <button>MENU</button>
             </div>
+            <div class="col-6 rounded-pill menu_button">
+              <button>Friends</button>
+            </div>
+            <div class="col-6 border-success rounded-pill menu_button">
+              <button>Maps</button>
+            </div>
+            <div class="col-6 rounded menu_button"><button>Events</button></div>
+          </div>
         </div>
         <div class="col">
-            <iframe width="750" height="400" src="https://www.youtube.com/embed/oym16Ph3OTU?si=wQWr5ZLaaxzJxbAh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe
+            width="750"
+            height="400"
+            src="https://www.youtube.com/embed/oym16Ph3OTU?si=wQWr5ZLaaxzJxbAh"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
-    </div>
-  
- 
-    <div class="google-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.4848746551347!2d-97.15517802357891!3d33.25379625946692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864db595faebd6e7%3A0x522282b77f411583!2sDiscovery%20Park!5e0!3m2!1sen!2sus!4v1695542146150!5m2!1sen!2sus" width="750" height="425" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+      </div>
 
-
+      <div class="google-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.4848746551347!2d-97.15517802357891!3d33.25379625946692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864db595faebd6e7%3A0x522282b77f411583!2sDiscovery%20Park!5e0!3m2!1sen!2sus!4v1695542146150!5m2!1sen!2sus"
+          width="750"
+          height="425"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
 
     <div class="overlay hidden"></div>
 
-
     <!-- Hidden Sign in/Sign up Page -->
-   
 
-
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
     <script src="uni_link.js"></script>
-</body>
+  </body>
 </html>

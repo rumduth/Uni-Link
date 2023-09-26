@@ -10,12 +10,21 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 30%;
-  height: 20%;
   border-radius: 10px;
   background: linear-gradient(0.25turn, rgb(2, 91, 2), #5fa8d3, #537a0f);
   padding: 6rem;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+}
+
+.sign_in
+{
+  height: 20%;
+}
+
+.sign_up
+{
+  height: 50%;
 }
 
 .close-modal {
@@ -110,8 +119,10 @@ div .button__nav_bar {
 }
 .google-map {
   position: fixed;
-  left: 33.9%;
-  bottom: 0px;
+  left: 50%;
+  bottom: 0%;
+  transform: translateX(-43.33%);
+  
 }
 
 
@@ -127,3 +138,11 @@ div .button__nav_bar {
     z-index: 5;
   }
   
+  .hour{
+    color:rgb(62, 120, 62);
+    font-size: 30px;
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+    font-weight: bold;
+  }
