@@ -102,6 +102,12 @@ div .button__nav_bar {
   height: 80%;
   bottom: 0px;
   right: 0px;
+  transition: bottom 0.5s;
+}
+
+.eagle_icon:hover
+{
+  bottom: 20px;
 }
 
 .unt_icon {
@@ -153,3 +159,4 @@ div .button__nav_bar {
     right: 20px;
     font-weight: bold;
   }
+
