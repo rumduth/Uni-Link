@@ -11,6 +11,7 @@ const hour_label = document.querySelector(`.hour`);
 const btn_sign_in = document.querySelector(`.btn__sign_in`)
 const user_name_sign_in = document.querySelector(`#user_name_sign_in`);
 const pass_word_sign_in = document.querySelector(`#pass_word_sign_in`);
+const advertisement = document.querySelector(`.advertisements`); //for things in middle
 
 /*Element query name Information*/
 
@@ -48,7 +49,9 @@ btn_sign_in.addEventListener('click',function()
   else
   {
     currentAccount = accounts[i];
-    
+    advertisement.classList.add(`hidden`);
+    sign_in_entries.classList.remove('not_hidden');
+    overlay.classList.add('hidden');
   }
     
 })

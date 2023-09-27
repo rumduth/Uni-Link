@@ -122,7 +122,14 @@ div .button__nav_bar {
   left: 50%;
   bottom: 0%;
   transform: translateX(-41.33%);
-  
+}
+
+.video
+{
+  position: fixed;
+  left: 50%;
+  bottom: 42%;
+  transform: translateX(-41.33%);
 }
 
 
