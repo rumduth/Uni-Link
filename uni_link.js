@@ -12,7 +12,11 @@ const btn_sign_in = document.querySelector(`.btn__sign_in`)
 const user_name_sign_in = document.querySelector(`#user_name_sign_in`);
 const pass_word_sign_in = document.querySelector(`#pass_word_sign_in`);
 const advertisement = document.querySelector(`.advertisements`); //for things in middle
-
+const newFeed = document.querySelector(`.newFeed`);
+const user_friend = document.querySelector(`#user_friend`);
+const user_name = document.querySelector(`#user_name`);
+const user_major = document.querySelector(`#user_major`);
+const user_action = document.querySelector(`#user_action`);
 /*Element query name Information*/
 
 /*Account Information*/
@@ -24,13 +28,33 @@ const account1 = {
   password: `123456`,
   student_id: `11493388`,
   phone_number: `9406295520`,
-  email: `rumduth1@gmail.com`
+  friends: ['George', 'Arlene', 'Jacob'],
+  email: `rumduth1@gmail.com`,
+  actions: [`At 11:30: Arlene shared post about Hackathon Event`, `At 7:30: Jacob shared his new achievement in Data Structure`, `At 8:30: George shared his thoughts about new school policy`]
 }
 
 const account2 = {
-  full_name: `Thong Ng`,
+  full_name: `Georgie`,
   major: `Computer Science`,
-  username: `tdn0103`,
+  username: `goi0912`,
+  password: `123453`,
+  student_id: `11493382`,
+  phone_number: `9406295521`,
+  email: `rumduth2@gmail.com`
+}
+const account3 = {
+  full_name: `Arlene`,
+  major: `Computer Science`,
+  username: `arl1231`,
+  password: `123453`,
+  student_id: `11493382`,
+  phone_number: `9406295521`,
+  email: `rumduth2@gmail.com`
+}
+const account4 = {
+  full_name: `Jacob`,
+  major: `Computer Science`,
+  username: `jov2212`,
   password: `123453`,
   student_id: `11493382`,
   phone_number: `9406295521`,
@@ -39,7 +63,7 @@ const account2 = {
 
 let currentAccount;
 
-const accounts = [account1,account2];
+const accounts = [account1,account2, account3, account4];
 btn_sign_in.addEventListener('click',function()
 {
   let username = String(user_name_sign_in.value);
@@ -52,9 +76,19 @@ btn_sign_in.addEventListener('click',function()
     advertisement.classList.add(`hidden`);
     sign_in_entries.classList.remove('not_hidden');
     overlay.classList.add('hidden');
+    newFeed.classList.remove(`hidden`);
+    user_name.textContent = `Good afternoon, ${currentAccount.full_name}`;
+    console.log(currentAccount.full_name);
+    user_major.textContent = `Your major: ${currentAccount.major}`;
+    let friendList = currentAccount.friends.join(', ');
+    console.log(`${currentAccount.major}`);
+    user_friend.textContent = `Your have ${currentAccount.friends.length} friends: ${friendList}`;
+    let actionList = currentAccount.actions.join(',\n');
+    user_action.textContent = `Below are your friend actions:\n ${actionList}`;
   }
     
 })
+
 
 
 

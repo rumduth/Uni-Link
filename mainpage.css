@@ -126,7 +126,7 @@ div .button__nav_bar {
 .google-map {
   position: fixed;
   left: 50%;
-  bottom: 0%;
+  bottom: 10%;
   transform: translateX(-41.33%);
 }
 
@@ -134,10 +134,20 @@ div .button__nav_bar {
 {
   position: fixed;
   left: 50%;
-  bottom: 42%;
+  bottom: 40%;
   transform: translateX(-41.33%);
 }
 
+.newFeed
+{
+  position: fixed;
+  left:50%;
+  bottom: 0%;
+  width: 450px;
+  height: 550px;
+  background-color: white;
+  transform: translateX(-41.33%);
+}
 
 
 .overlay {
@@ -160,3 +170,5 @@ div .button__nav_bar {
     font-weight: bold;
   }
 
+  
+  
